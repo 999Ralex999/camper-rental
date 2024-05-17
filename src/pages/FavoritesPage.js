@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import AdvertCard from "../components/AdvertCard";
 
 const FavoritesPage = () => {
   const favorites = useSelector((state) => state.adverts.favorites);
@@ -8,11 +9,8 @@ const FavoritesPage = () => {
     <div>
       <h1>Favorites</h1>
       <div>
-        {favorites.map((ad) => (
-          <div key={ad.id}>
-            <h2>{ad.name}</h2>
-            <p>{ad.description}</p>
-          </div>
+        {favorites.map((advert) => (
+          <AdvertCard key={advert.id} advert={advert} />
         ))}
       </div>
     </div>

@@ -1,0 +1,5 @@
+/* src/components/Card/CardTitle/CardTitle.module.css */
+.title {
+    font-size: 18px;
+    color: #000;
+}

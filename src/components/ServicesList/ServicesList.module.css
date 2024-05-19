@@ -1,0 +1,10 @@
+/* src/components/ServicesList/ServicesList.module.css */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

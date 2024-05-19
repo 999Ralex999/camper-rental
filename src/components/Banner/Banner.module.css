@@ -1,0 +1,7 @@
+/* src/components/Banner/Banner.module.css */
+.banner {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+/* src/components/Card/CardDescription/CardDescription.module.css */
+.description {
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,7 @@
+/* src/components/Buttons/ButtonFavorite/ButtonFavorite.module.css */
+.button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

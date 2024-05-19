@@ -1,0 +1,5 @@
+/* src/components/Card/CardPrice/CardPrice.module.css */
+.price {
+    font-size: 16px;
+    color: #000;
+}

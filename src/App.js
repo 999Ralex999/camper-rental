@@ -1,37 +1,34 @@
-import React, { useState } from "react";
+// src/App.js
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/CatalogPage";
-import CatalogPage from "./pages/CatalogPage";
-import FavoritesPage from "./pages/FavoritesPage";
-import AdvertModal from "./components/AdvertModal";
-import "./assets/styles/styles.css";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
+import HomePage from "./pages/HomePage/HomePage";
+import Navigation from "./components/Navigation/Navigation";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  const [selectedAdvert, setSelectedAdvert] = useState(null);
-
   const handleShowMore = (advert) => {
-    setSelectedAdvert(advert);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedAdvert(null);
+    console.log("Show more:", advert);
+    // Реализация показа модального окна или перенаправления на страницу с подробной информацией
   };
 
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/catalog"
-            element={<CatalogPage onShowMore={handleShowMore} />}
-          />
-          <Route path="/favorites" element={<FavoritesPage />} />
-        </Routes>
-        {selectedAdvert && (
-          <AdvertModal advert={selectedAdvert} onClose={handleCloseModal} />
-        )}
-      </div>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/catalog"
+          element={<CatalogPage onShowMore={handleShowMore} />}
+        />
+        <Route
+          path="/favorites"
+          element={<FavoritesPage onShowMore={handleShowMore} />}
+        />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 };

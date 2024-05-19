@@ -1,10 +1,11 @@
+// src/components/AdvertCard.js
 import React from "react";
 import "../assets/styles/styles.css";
 
 const AdvertCard = ({ advert, onShowMore, onToggleFavorite }) => {
   return (
     <div className="card">
-      <img src={advert.image} alt={advert.name} />
+      <img src={advert.gallery[0]} alt={advert.name} />
       <div className="card-content">
         <h2 className="card-title">{advert.name}</h2>
         <p className="card-description">{advert.description}</p>
@@ -13,7 +14,7 @@ const AdvertCard = ({ advert, onShowMore, onToggleFavorite }) => {
             Show more
           </button>
           <button
-            onClick={() => onToggleFavorite(advert.id)}
+            onClick={() => onToggleFavorite(advert._id)}
             className={`button ${advert.isFavorite ? "favorite" : ""}`}
           >
             ❤️

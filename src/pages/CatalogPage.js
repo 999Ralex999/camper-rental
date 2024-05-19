@@ -15,8 +15,22 @@ const CatalogPage = ({ onShowMore }) => {
         `https://6647446e51e227f23ab1b9f9.mockapi.io/api/adverts?page=${page}&limit=4`
       )
       .then((response) => {
-        setAdverts((prevAdverts) => [...prevAdverts, ...response.data]);
-        if (response.data.length < 4) {
+        const newAdverts = response.data;
+        console.log("Fetched adverts:", newAdverts);
+        newAdverts.forEach((advert) => {
+          console.log("Advert details:", advert);
+        });
+        // Проверка на дублирование
+        setAdverts((prevAdverts) => {
+          const updatedAdverts = [...prevAdverts];
+          newAdverts.forEach((newAdvert) => {
+            if (!updatedAdverts.some((ad) => ad._id === newAdvert._id)) {
+              updatedAdverts.push(newAdvert);
+            }
+          });
+          return updatedAdverts;
+        });
+        if (newAdverts.length < 4) {
           setHasMore(false);
         }
       })
@@ -30,13 +44,16 @@ const CatalogPage = ({ onShowMore }) => {
       <h1 className="text-3xl font-bold mb-4">Catalog</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {adverts.length > 0 ? (
-          adverts.map((advert) => (
-            <AdvertCard
-              key={advert.id}
-              advert={advert}
-              onShowMore={onShowMore}
-            />
-          ))
+          adverts.map((advert) => {
+            console.log("Rendering advert with id:", advert._id);
+            return (
+              <AdvertCard
+                key={advert._id}
+                advert={advert}
+                onShowMore={onShowMore}
+              />
+            );
+          })
         ) : (
           <p>No adverts available.</p>
         )}

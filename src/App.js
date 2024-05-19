@@ -1,3 +1,43 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/CatalogPage";
+import CatalogPage from "./pages/CatalogPage";
+import FavoritesPage from "./pages/FavoritesPage";
+import AdvertModal from "./components/AdvertModal";
+import "./assets/styles/styles.css";
+
+const App = () => {
+  const [selectedAdvert, setSelectedAdvert] = useState(null);
+
+  const handleShowMore = (advert) => {
+    setSelectedAdvert(advert);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedAdvert(null);
+  };
+
+  return (
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/catalog"
+            element={<CatalogPage onShowMore={handleShowMore} />}
+          />
+          <Route path="/favorites" element={<FavoritesPage />} />
+        </Routes>
+        {selectedAdvert && (
+          <AdvertModal advert={selectedAdvert} onClose={handleCloseModal} />
+        )}
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+
 // import logo from "./logo.svg";
 // import "./App.css";
 
@@ -23,25 +63,3 @@
 // }
 
 // export default App;
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import CatalogPage from "./pages/CatalogPage";
-import FavoritesPage from "./pages/FavoritesPage";
-
-const App = () => {
-  return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/catalog" element={<CatalogPage />} />
-          <Route path="/favorites" element={<FavoritesPage />} />
-          <Route path="*" element={<HomePage />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-};
-
-export default App;

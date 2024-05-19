@@ -1,39 +1,27 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { toggleFavorite } from "../redux/reducers/advertsReducer";
+import "../assets/styles/styles.css";
 
-const AdvertCard = ({ advert }) => {
-  const dispatch = useDispatch();
-
+const AdvertCard = ({ advert, onShowMore, onToggleFavorite }) => {
   return (
-    <div>
-      <h2>{advert.name}</h2>
-      <p>{advert.description}</p>
-      <button onClick={() => dispatch(toggleFavorite(advert.id))}>
-        {advert.isFavorite ? "Remove from Favorites" : "Add to Favorites"}
-      </button>
+    <div className="card">
+      <img src={advert.image} alt={advert.name} />
+      <div className="card-content">
+        <h2 className="card-title">{advert.name}</h2>
+        <p className="card-description">{advert.description}</p>
+        <div className="card-actions">
+          <button className="button" onClick={() => onShowMore(advert)}>
+            Show more
+          </button>
+          <button
+            onClick={() => onToggleFavorite(advert.id)}
+            className={`button ${advert.isFavorite ? "favorite" : ""}`}
+          >
+            ❤️
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default AdvertCard;
-
-// import React from "react";
-// import { useDispatch } from "react-redux";
-// import { toggleFavorite } from "../redux/reducers/advertsReducer";
-
-// const AdvertCard = ({ advert }) => {
-//   const dispatch = useDispatch();
-
-//   return (
-//     <div>
-//       <h2>{advert.name}</h2>
-//       <p>{advert.description}</p>
-//       <button onClick={() => dispatch(toggleFavorite(advert.id))}>
-//         {advert.isFavorite ? "Remove from Favorites" : "Add to Favorites"}
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default AdvertCard;

@@ -1,0 +1,5 @@
+/* src/components/Typography/AsideSectionTitle/AsideSectionTitle.module.css */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}

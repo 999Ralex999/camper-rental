@@ -1,11 +1,11 @@
 // src/components/ServicesList/ServicesList.jsx
 import React from "react";
-import styles from "./ServicesList.module.css";
 import ServicesItem from "./ServicesItem/ServicesItem";
+import "./ServicesList.module.css";
 
 const ServicesList = ({ services }) => {
   return (
-    <ul className={styles.list}>
+    <ul className="services-list">
       {services.map((service, index) => (
         <ServicesItem key={index} service={service} />
       ))}

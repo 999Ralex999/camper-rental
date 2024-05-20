@@ -1,0 +1,7 @@
+/* src/components/Buttons/ButtonClose/ButtonClose.module.css */
+.buttonClose {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

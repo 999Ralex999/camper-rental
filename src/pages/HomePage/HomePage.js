@@ -9,12 +9,8 @@ const HomePage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.banner}>
-        <Banner />
-      </div>
-      <div className={styles.services}>
-        <ServicesList services={services} />
-      </div>
+      <Banner />
+      <ServicesList services={services} />
     </div>
   );
 };

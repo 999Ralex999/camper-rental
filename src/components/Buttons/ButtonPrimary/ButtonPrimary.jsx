@@ -4,7 +4,7 @@ import styles from "./ButtonPrimary.module.css";
 
 const ButtonPrimary = ({ children, onClick }) => {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={styles.buttonPrimary} onClick={onClick}>
       {children}
     </button>
   );

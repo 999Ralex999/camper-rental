@@ -1,34 +1,20 @@
-// src/App.js
+// src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
-import HomePage from "./pages/HomePage/HomePage";
 import Navigation from "./components/Navigation/Navigation";
-import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  const handleShowMore = (advert) => {
-    console.log("Show more:", advert);
-    // Реализация показа модального окна или перенаправления на страницу с подробной информацией
-  };
-
   return (
     <Router>
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/catalog"
-          element={<CatalogPage onShowMore={handleShowMore} />}
-        />
-        <Route
-          path="/favorites"
-          element={<FavoritesPage onShowMore={handleShowMore} />}
-        />
-        <Route path="*" element={<HomePage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/favorites" element={<FavoritesPage />} />
       </Routes>
-      <Footer />
     </Router>
   );
 };

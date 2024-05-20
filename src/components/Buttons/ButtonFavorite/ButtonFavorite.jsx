@@ -4,8 +4,11 @@ import styles from "./ButtonFavorite.module.css";
 
 const ButtonFavorite = ({ isFavorite, onClick }) => {
   return (
-    <button className={styles.button} onClick={onClick}>
-      {isFavorite ? "★" : "☆"}
+    <button
+      className={`${styles.buttonFavorite} ${isFavorite ? styles.active : ""}`}
+      onClick={onClick}
+    >
+      {isFavorite ? "♥" : "♡"}
     </button>
   );
 };

@@ -5,8 +5,7 @@ import styles from "./Banner.module.css";
 const Banner = () => {
   return (
     <div className={styles.banner}>
-      <h1>Welcome to Camper Rent</h1>
-      <p>Your adventure starts here</p>
+      <h1>Camper Rent</h1>
     </div>
   );
 };

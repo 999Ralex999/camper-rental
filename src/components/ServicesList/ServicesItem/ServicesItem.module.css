@@ -1,5 +1,5 @@
 /* src/components/ServicesList/ServicesItem/ServicesItem.module.css */
-.item {
+.servicesItem {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }

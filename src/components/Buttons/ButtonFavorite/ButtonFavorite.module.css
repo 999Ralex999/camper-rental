@@ -1,11 +1,11 @@
 /* src/components/Buttons/ButtonFavorite/ButtonFavorite.module.css */
-.buttonFavorite {
+.button-favorite {
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
 }
 
-.buttonFavorite.active {
+.button-favorite.active {
     color: red;
 }

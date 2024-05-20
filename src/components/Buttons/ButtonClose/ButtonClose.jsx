@@ -1,10 +1,10 @@
 // src/components/Buttons/ButtonClose/ButtonClose.jsx
 import React from "react";
-import styles from "./ButtonClose.module.css";
+import "./ButtonClose.module.css";
 
 const ButtonClose = ({ onClick }) => {
   return (
-    <button className={styles.buttonClose} onClick={onClick}>
+    <button className="button-close" onClick={onClick}>
       &times;
     </button>
   );

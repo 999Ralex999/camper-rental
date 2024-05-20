@@ -1,24 +1,33 @@
 // src/components/Navigation/Navigation.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./Navigation.module.css";
+import "./Navigation.module.css";
 
 const Navigation = () => {
   return (
-    <nav className={styles.nav}>
+    <nav>
       <ul>
         <li>
-          <NavLink to="/" exact="true" activeclassname="active">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/catalog" activeclassname="active">
+          <NavLink
+            to="/catalog"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Catalog
           </NavLink>
         </li>
         <li>
-          <NavLink to="/favorites" activeclassname="active">
+          <NavLink
+            to="/favorites"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Favorites
           </NavLink>
         </li>

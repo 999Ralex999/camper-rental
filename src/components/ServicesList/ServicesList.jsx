@@ -6,8 +6,8 @@ import "./ServicesList.module.css";
 const ServicesList = ({ services }) => {
   return (
     <ul className="services-list">
-      {services.map((service, index) => (
-        <ServicesItem key={index} service={service} />
+      {services.map((service) => (
+        <ServicesItem key={service.id} service={service} />
       ))}
     </ul>
   );

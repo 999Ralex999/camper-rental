@@ -1,11 +1,11 @@
 // src/components/Buttons/ButtonFavorite/ButtonFavorite.jsx
 import React from "react";
-import styles from "./ButtonFavorite.module.css";
+import "./ButtonFavorite.module.css";
 
 const ButtonFavorite = ({ isFavorite, onClick }) => {
   return (
     <button
-      className={`${styles.buttonFavorite} ${isFavorite ? styles.active : ""}`}
+      className={`button-favorite ${isFavorite ? "active" : ""}`}
       onClick={onClick}
     >
       {isFavorite ? "♥" : "♡"}

@@ -1,6 +1,14 @@
 // src/redux/campersSlice.js
-import { createSlice } from "@reduxjs/toolkit";
-import { fetchCampers } from "./operations";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
+
+export const fetchCampers = createAsyncThunk(
+  "campers/fetchCampers",
+  async () => {
+    const response = await axios.get("/api/campers");
+    return response.data;
+  }
+);
 
 const campersSlice = createSlice({
   name: "campers",

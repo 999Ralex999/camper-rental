@@ -1,23 +1,24 @@
-// src/App.jsx
+// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
-import CatalogPage from "./pages/CatalogPage/CatalogPage";
-import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
+import Home from "./pages/Home/Home";
+import Catalog from "./pages/Catalog/Catalog";
+import Favorites from "./pages/Favorites/Favorites";
 import Navigation from "./components/Navigation/Navigation";
+import "./index.css";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Navigation />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/catalog" element={<CatalogPage />} />
-        <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
 

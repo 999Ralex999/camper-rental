@@ -1,9 +1,9 @@
 // src/components/Typography/SectionTitle/SectionTitle.jsx
 import React from "react";
-import styles from "./SectionTitle.module.css";
+import "./SectionTitle.module.css";
 
 const SectionTitle = ({ children }) => {
-  return <h2 className={styles.title}>{children}</h2>;
+  return <h2 className="section-title">{children}</h2>;
 };
 
 export default SectionTitle;

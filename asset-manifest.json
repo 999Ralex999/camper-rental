@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/camper-rental/static/css/main.563ff369.css",
+    "main.js": "/camper-rental/static/js/main.02b48cea.js",
+    "static/css/935.90f9d2f6.chunk.css": "/camper-rental/static/css/935.90f9d2f6.chunk.css",
+    "static/js/935.59fa0dad.chunk.js": "/camper-rental/static/js/935.59fa0dad.chunk.js",
+    "static/css/642.0717aa2d.chunk.css": "/camper-rental/static/css/642.0717aa2d.chunk.css",
+    "static/js/642.3c207fea.chunk.js": "/camper-rental/static/js/642.3c207fea.chunk.js",
+    "static/css/798.96605c2f.chunk.css": "/camper-rental/static/css/798.96605c2f.chunk.css",
+    "static/js/798.07632fea.chunk.js": "/camper-rental/static/js/798.07632fea.chunk.js",
+    "static/js/779.7eb3bb03.chunk.js": "/camper-rental/static/js/779.7eb3bb03.chunk.js",
+    "static/media/Inter-font-variable.woff2": "/camper-rental/static/media/Inter-font-variable.11783d6e291288bd5095.woff2",
+    "static/media/camper-desktop.webp": "/camper-rental/static/media/camper-desktop.7a10993b574befc78b6a.webp",
+    "static/media/icons.svg": "/camper-rental/static/media/icons.57e0c22eb3320d8cf15707328740119d.svg",
+    "index.html": "/camper-rental/index.html",
+    "main.563ff369.css.map": "/camper-rental/static/css/main.563ff369.css.map",
+    "main.02b48cea.js.map": "/camper-rental/static/js/main.02b48cea.js.map",
+    "935.90f9d2f6.chunk.css.map": "/camper-rental/static/css/935.90f9d2f6.chunk.css.map",
+    "935.59fa0dad.chunk.js.map": "/camper-rental/static/js/935.59fa0dad.chunk.js.map",
+    "642.0717aa2d.chunk.css.map": "/camper-rental/static/css/642.0717aa2d.chunk.css.map",
+    "642.3c207fea.chunk.js.map": "/camper-rental/static/js/642.3c207fea.chunk.js.map",
+    "798.96605c2f.chunk.css.map": "/camper-rental/static/css/798.96605c2f.chunk.css.map",
+    "798.07632fea.chunk.js.map": "/camper-rental/static/js/798.07632fea.chunk.js.map",
+    "779.7eb3bb03.chunk.js.map": "/camper-rental/static/js/779.7eb3bb03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.563ff369.css",
+    "static/js/main.02b48cea.js"
+  ]
+}

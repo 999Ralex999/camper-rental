@@ -6,13 +6,14 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #101828;
+  max-width: 1500px;
 }
 
 html {
@@ -162,6 +163,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box;
   padding: 0;
+  display: none;
 }
 
 [type="number"]::-webkit-inner-spin-button,

@@ -19,19 +19,19 @@ function CatalogPage() {
   const error = useSelector(selectError);
   const allCampers = useSelector(selectVisibleCampers);
   const isModalOpen = useSelector(selectOpenModal);
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [page, setPage] = useState(1);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCampers());
-  }, [dispatch]);
+    dispatch(fetchCampers(page));
+  }, [dispatch, page]);
 
   const loadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 4);
+    setPage((prevPage) => prevPage + 1);
   };
 
-  const visibleCampers = allCampers.slice(0, visibleCount);
+  const visibleCampers = allCampers.slice(0, page * 4);
 
   return (
     <section className={css.container}>
@@ -43,7 +43,7 @@ function CatalogPage() {
           <Loader />
         )}
         {isModalOpen && <Modal />}
-        {!isLoading && !error && visibleCount < allCampers.length && (
+        {!isLoading && !error && page * 4 < allCampers.length && (
           <SecondaryButton clickCallback={loadMore}>Load more</SecondaryButton>
         )}
       </div>

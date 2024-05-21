@@ -1,0 +1,30 @@
+/* .button {
+  display: block;
+  margin: 50px auto 0;
+  font-weight: 500;
+  line-height: 1.5;
+  border: 1px solid #47546733;
+  border-radius: 40px;
+  padding: 16px 32px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #E44848;
+} */
+/* src/components/Buttons/SecondaryButton/SecondaryButton.module.css */
+.button {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #5a6268;
+}

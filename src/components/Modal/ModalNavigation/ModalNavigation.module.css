@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.button {
+  font-size: 20px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.divider {
+  margin: 0;
+  border-color: #10182833;
+}
+
+.button:hover:after,
+.pressed:after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E44848;
+  position: absolute;
+  bottom: -27px;
+
+}

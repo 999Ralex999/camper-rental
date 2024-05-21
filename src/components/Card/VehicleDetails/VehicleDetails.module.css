@@ -1,0 +1,41 @@
+/* src/components/VehicleDetails/VehicleDetails.module.css */
+/* .container {
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.values {
+  text-align: right;
+}
+
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+} */
+/* src/components/VehicleDetails/VehicleDetails.module.css */
+.container {
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.values {
+  text-align: right;
+}
+
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.noDetails {
+  font-size: 1rem;
+  color: #666;
+}

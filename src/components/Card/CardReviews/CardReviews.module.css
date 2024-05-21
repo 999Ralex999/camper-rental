@@ -1,5 +1,20 @@
 /* src/components/Card/CardReviews/CardReviews.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.container svg {
+    width: 16px;
+    height: 16px;
+    fill: #ffc531;
+    stroke: #ffc531;
+}
+
 .reviews {
-    font-size: 14px;
-    color: #999;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin: 0;
 }

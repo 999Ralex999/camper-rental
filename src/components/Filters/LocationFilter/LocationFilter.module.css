@@ -1,0 +1,29 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-weight: 500;
+  color: #10182899;
+  line-height: 1.5;
+  position: relative;
+}
+
+.input {
+  padding: 18px 18px 18px 44px;
+  border: none;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+}
+
+.input:focus ~ svg {
+  stroke: #101828;
+}
+
+.label svg {
+  position: absolute;
+  stroke: #10182899;
+  width: 18px;
+  height: 20px;
+  bottom: 18px;
+  left: 18px;
+}

@@ -1,9 +1,8 @@
 // src/components/Typography/PageTitle/PageTitle.jsx
-import React from "react";
-import "./PageTitle.module.css";
+import css from "./PageTitle.module.css";
 
-const PageTitle = ({ children }) => {
-  return <h1 className="page-title">{children}</h1>;
-};
+function PageTitle({ children }) {
+  return <h1 className={css.heading}>{children}</h1>;
+}
 
 export default PageTitle;

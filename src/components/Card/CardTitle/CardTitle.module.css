@@ -1,5 +1,7 @@
 /* src/components/Card/CardTitle/CardTitle.module.css */
-.title {
-    font-size: 18px;
-    color: #000;
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
 }

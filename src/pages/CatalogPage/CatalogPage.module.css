@@ -1,4 +1,5 @@
-/* src/pages/CatalogPage/CatalogPage.module.css */
-.catalog {
-    padding: 20px;
+/* src/pages/Catalog/Catalog.module.css */
+.container {
+    display: flex;
+    gap: 64px;
 }

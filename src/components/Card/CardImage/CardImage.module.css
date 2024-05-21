@@ -1,5 +1,7 @@
 /* src/components/Card/CardImage/CardImage.module.css */
 .image {
-    width: 100%;
-    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+    object-position: 80% 50%;
 }

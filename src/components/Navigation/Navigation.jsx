@@ -1,39 +1,23 @@
 // src/components/Navigation/Navigation.jsx
-import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Navigation.module.css";
+import css from "./Navigation.module.css";
 
-const Navigation = () => {
+function Navigation() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/catalog"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Catalog
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/favorites"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Favorites
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+    <header className={css.container}>
+      <nav className={css.navigation}>
+        <NavLink className="link" to="/" end>
+          Home
+        </NavLink>
+        <NavLink className="link" to="/catalog">
+          Catalog
+        </NavLink>
+        <NavLink className="link" to="/favorites">
+          Favorites
+        </NavLink>
+      </nav>
+    </header>
   );
-};
+}
 
 export default Navigation;

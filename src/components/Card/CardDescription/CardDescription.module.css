@@ -1,5 +1,12 @@
 /* src/components/Card/CardDescription/CardDescription.module.css */
 .description {
-    font-size: 14px;
-    color: #333;
+    line-height: 1.5;
+    color: #475467;
+    margin: 24px 0;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
 }

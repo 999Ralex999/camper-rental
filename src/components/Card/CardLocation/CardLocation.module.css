@@ -1,5 +1,17 @@
 /* src/components/Card/CardLocation/CardLocation.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.container svg {
+    width: 16px;
+    height: 16px;
+    stroke: #101828;
+}
+
 .location {
-    font-size: 14px;
-    color: #666;
+    line-height: 1.5;
+    margin: 0;
 }

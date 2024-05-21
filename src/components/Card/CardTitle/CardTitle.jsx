@@ -1,9 +1,8 @@
 // src/components/Card/CardTitle/CardTitle.jsx
-import React from "react";
-import styles from "./CardTitle.module.css";
+import css from "./CardTitle.module.css";
 
-const CardTitle = ({ title }) => {
-  return <h2 className={styles.title}>{title}</h2>;
-};
+function CardTitle({ children }) {
+  return <h3 className={css.heading}>{children}</h3>;
+}
 
 export default CardTitle;

@@ -1,11 +1,21 @@
 /* src/components/Buttons/ButtonFavorite/ButtonFavorite.module.css */
-.button-favorite {
-    background: none;
+.button {
     border: none;
-    font-size: 24px;
+    background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    height: 24px;
 }
 
-.button-favorite.active {
-    color: red;
+.button svg {
+    stroke: black;
+    fill: none;
+    width: 24px;
+    height: 24px;
+}
+
+.pressed svg,
+.button:hover svg {
+    fill: #E44848;
+    stroke: #E44848;
 }

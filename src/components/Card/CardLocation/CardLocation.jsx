@@ -1,9 +1,14 @@
 // src/components/Card/CardLocation/CardLocation.jsx
-import React from "react";
-import styles from "./CardLocation.module.css";
+import Icon from "../../Icons/Icon";
+import css from "./CardLocation.module.css";
 
-const CardLocation = ({ location }) => {
-  return <p className={styles.location}>{location}</p>;
-};
+function CardLocation({ location }) {
+  return (
+    <div className={css.container}>
+      <Icon iconName="map-pin" />
+      <p className={css.location}>{location}</p>
+    </div>
+  );
+}
 
 export default CardLocation;

@@ -1,0 +1,10 @@
+.container {
+  min-width: 470px;
+}
+
+.heading {
+  font-weight: 500;
+  color: #475467;
+  line-height: 1.5;
+  margin: 32px 0 14px 0;
+}

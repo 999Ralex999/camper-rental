@@ -1,9 +1,12 @@
 // src/components/Card/CardPrice/CardPrice.jsx
-import React from "react";
-import styles from "./CardPrice.module.css";
+import css from "./CardPrice.module.css";
 
-const CardPrice = ({ price }) => {
-  return <p className={styles.price}>${price}/day</p>;
-};
+function CardPrice({ children }) {
+  return (
+    <p className={css.price}>
+      €{Number(children).toFixed(2).toString().replace(".", ",")}
+    </p>
+  );
+}
 
 export default CardPrice;

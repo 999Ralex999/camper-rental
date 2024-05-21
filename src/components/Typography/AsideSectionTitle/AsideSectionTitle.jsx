@@ -1,9 +1,13 @@
 // src/components/Typography/AsideSectionTitle/AsideSectionTitle.jsx
-import React from "react";
-import "./AsideSectionTitle.module.css";
+import css from "./AsideSectionTitle.module.css";
 
-const AsideSectionTitle = ({ children }) => {
-  return <h2 className="aside-section-title">{children}</h2>;
-};
+function AsideSectionTitle({ heading }) {
+  return (
+    <>
+      <h4 className={css.heading}>{heading}</h4>
+      <hr className={css.divider} />
+    </>
+  );
+}
 
 export default AsideSectionTitle;

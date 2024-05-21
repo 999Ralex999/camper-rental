@@ -1,7 +1,15 @@
 /* src/components/Buttons/ButtonClose/ButtonClose.module.css */
-.button-close {
-    background: none;
+.button {
     border: none;
-    font-size: 24px;
+    background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    height: 32px;
+}
+
+.button svg {
+    stroke: black;
+    fill: none;
+    width: 32px;
+    height: 32px;
 }

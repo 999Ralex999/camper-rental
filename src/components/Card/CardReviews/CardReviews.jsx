@@ -1,9 +1,16 @@
 // src/components/Card/CardReviews/CardReviews.jsx
-import React from "react";
-import styles from "./CardReviews.module.css";
+import Icon from "../../Icons/Icon";
+import css from "./CardReviews.module.css";
 
-const CardReviews = ({ reviews }) => {
-  return <p className={styles.reviews}>{reviews} reviews</p>;
-};
+function CardReviews({ rating, reviewsNumber }) {
+  return (
+    <div className={css.container}>
+      <Icon iconName="star" />
+      <p className={css.reviews}>
+        {rating} ({reviewsNumber} Reviews)
+      </p>
+    </div>
+  );
+}
 
 export default CardReviews;

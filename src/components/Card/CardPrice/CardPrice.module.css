@@ -1,5 +1,7 @@
 /* src/components/Card/CardPrice/CardPrice.module.css */
 .price {
-    font-size: 16px;
-    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
 }

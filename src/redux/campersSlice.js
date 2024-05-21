@@ -1,35 +1,47 @@
 // src/redux/campersSlice.js
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
-
-export const fetchCampers = createAsyncThunk(
-  "campers/fetchCampers",
-  async () => {
-    const response = await axios.get("/api/campers");
-    return response.data;
-  }
-);
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchCampers } from "./operations";
 
 const campersSlice = createSlice({
   name: "campers",
   initialState: {
     items: [],
-    status: null,
+    isLoading: false,
+    error: null,
   },
-  reducers: {},
-  extraReducers: (builder) => {
-    builder
-      .addCase(fetchCampers.pending, (state) => {
-        state.status = "loading";
-      })
-      .addCase(fetchCampers.fulfilled, (state, action) => {
-        state.items = action.payload;
-        state.status = "succeeded";
-      })
-      .addCase(fetchCampers.rejected, (state) => {
-        state.status = "failed";
+  reducers: {
+    toggleFavorite(state, action) {
+      const changedState = state.items.map((item) => {
+        if (item._id === action.payload) {
+          item.isFavorite = !item.isFavorite;
+        }
+        return item;
       });
+      state.items = changedState;
+    },
+    loadMoreCampers(state, action) {},
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchCampers.pending, (state, action) => {
+      state.isLoading = true;
+    });
+    builder.addCase(fetchCampers.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.error = null;
+      action.payload.forEach((camper) => {
+        camper.isFavorite = false;
+        if (!state.items.some((item) => item._id === camper._id)) {
+          state.items.push(camper);
+        }
+      });
+    });
+    builder.addCase(fetchCampers.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    });
   },
 });
 
-export default campersSlice.reducer;
+export const { toggleFavorite } = campersSlice.actions;
+
+export const campersReducer = campersSlice.reducer;

@@ -14,19 +14,19 @@ Load More: Load more campers on demand.
 
 # Technologies Used
 
-`React`: A JavaScript library for building user interfaces. React Documentation
-`Redux` Toolkit: A toolset for efficient Redux development. Redux Toolkit Documentation
-`React Router`: A collection of navigational components for React applications. React Router Documentation
-`Axios`: A promise-based HTTP client for the browser and Node.js. Axios Documentation
-`CSS Modules`: For modular and reusable CSS.
+- `React`: A JavaScript library for building user interfaces. React Documentation
+- `Redux` Toolkit: A toolset for efficient Redux development. Redux Toolkit Documentation
+- `React Router`: A collection of navigational components for React applications. React Router Documentation
+- `Axios`: A promise-based HTTP client for the browser and Node.js. Axios Documentation
+- `CSS Modules`: For modular and reusable CSS.
 
 # Installation
 
 To get the project up and running, and view components in the browser, complete the following steps:
 
-Download and install Node: Node.js
-Clone this repo: `git clone https://github.com/999Ralex999/camper-rental`
-Install project dependencies: `npm install`
+- Download and install Node: Node.js
+- Clone this repo: `git clone https://github.com/999Ralex999/camper-rental`
+- Install project dependencies: `npm install`
 
 This will run the app in development mode. Open http://localhost:3000 to view it
 in the browser.

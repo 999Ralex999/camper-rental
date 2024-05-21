@@ -1,20 +1,3 @@
-// src/components/Card/CardDescription/CardDescription.jsx
-// import css from "./CardDescription.module.css";
-
-// function CardDescription({ description, truncate }) {
-//   return (
-//     <p
-//       className={
-//         truncate ? `${css.truncate} ${css.description}` : `${css.description}`
-//       }
-//     >
-//       {description}
-//     </p>
-//   );
-// }
-
-// export default CardDescription;
-
 // src/components/CardDescription/CardDescription.jsx
 import React from "react";
 import PropTypes from "prop-types";

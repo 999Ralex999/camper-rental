@@ -1,3 +1,4 @@
+/* src/components/Filters/LocationFilter/LocationFilter.module.css*/
 .label {
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
   border-radius: 10px;
 }
 
-.input:focus ~ svg {
+.input:focus~svg {
   stroke: #101828;
 }
 

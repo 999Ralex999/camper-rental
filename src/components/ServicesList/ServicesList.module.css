@@ -1,23 +1,9 @@
 /* src/components/ServicesList/ServicesList.module.css */
-/* .container {
-    max-width: 1100px;
-    margin: 20px auto 20px auto;
-}
-
-.list {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding-left: 0;
-} */
-
-/* src/components/ServicesList/ServicesList.module.css */
 .services {
-    padding: 60px 20px;
-    /* увеличиваем padding */
-    background-color: #f9f9f9;
-    /* добавляем фоновый цвет */
+    margin: 20px auto;
+    max-width: 1200px;
     text-align: center;
+
 }
 
 .services h2 {
@@ -30,6 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+
 }
 
 .services__item {

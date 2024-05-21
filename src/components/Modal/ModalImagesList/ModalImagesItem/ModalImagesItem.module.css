@@ -1,3 +1,4 @@
+/* src/components/Modal/ModalImagesList/ModalImagesItem/ModalImagesItem.module.css*/
 .item {
   width: calc((100% - 32px) / 3);
 }

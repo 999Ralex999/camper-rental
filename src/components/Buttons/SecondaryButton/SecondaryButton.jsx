@@ -1,18 +1,3 @@
-// import css from "./ButtonSecondary.module.css";
-
-// function ButtonSecondary({ clickCallback, buttonType, children }) {
-// 	return (
-// 		<button
-// 			{...(clickCallback && { onClick: clickCallback })}
-// 			type={buttonType}
-// 			className={css.button}>
-// 			{children}
-// 		</button>
-// 	);
-// }
-
-// export default ButtonSecondary;
-
 // src/components/Buttons/SecondaryButton/SecondaryButton.jsx
 import React from "react";
 import PropTypes from "prop-types";

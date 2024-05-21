@@ -1,3 +1,4 @@
+/* src/components/Modal/ModalFeatures/ModalFeatures.jsx*/
 import CategoriesList from "../../CategoriesList/CategoriesList";
 import VehicleDetails from "../../Card/VehicleDetails/VehicleDetails";
 

@@ -1,3 +1,4 @@
+/* src/components/Filters/FilterPicker/FilterPicker.module.css*/
 .item {
   flex-basis: calc((100% - 20px)/3);
 }

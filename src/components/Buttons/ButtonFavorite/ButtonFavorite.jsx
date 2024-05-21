@@ -1,30 +1,4 @@
 // src/components/Buttons/ButtonFavorite/ButtonFavorite.jsx
-// import { useDispatch } from "react-redux";
-// import Icon from "../../Icons/Icon";
-// import css from "./ButtonFavorite.module.css";
-// import { toggleFavorite } from "../../../redux/campersSlice";
-
-// function ButtonFavorite({ isFavorite, id }) {
-//   const dispatch = useDispatch();
-
-//   const handleClick = () => {
-//     dispatch(toggleFavorite(id));
-//   };
-
-//   return (
-//     <button
-//       type="button"
-//       onClick={handleClick}
-//       className={isFavorite ? `${css.pressed} ${css.button}` : `${css.button}`}
-//     >
-//       <Icon iconName="heart" />
-//     </button>
-//   );
-// }
-
-// export default ButtonFavorite;
-
-// src/components/Buttons/ButtonFavorite/ButtonFavorite.jsx
 import React, { useCallback } from "react";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";

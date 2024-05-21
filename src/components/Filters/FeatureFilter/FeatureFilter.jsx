@@ -1,3 +1,4 @@
+/* src/components/Filters/FeatureFilter/FeatureFilter.jsx */
 import AsideSectionTitle from "../../Typography/AsideSectionTitle/AsideSectionTitle";
 import FilterPickersList from "../FilterPickersList/FilterPickersList";
 import css from "./FeatureFilter.module.css";

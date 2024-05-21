@@ -1,3 +1,4 @@
+/* src/components/Filter.jsx*/
 import LocationFilter from "./LocationFilter/LocationFilter";
 import FeatureFilter from "./FeatureFilter/FeatureFilter";
 import { VEHICLE_EQUIPMENT, VEHICLE_TYPE } from "../../constants/filters";

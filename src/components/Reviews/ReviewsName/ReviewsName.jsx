@@ -1,3 +1,4 @@
+/* src/components/Reviews/ReviewsName/ReviewsName.jsx*/
 import css from "./ReviewsName.module.css";
 
 function ReviewsName({ name }) {
